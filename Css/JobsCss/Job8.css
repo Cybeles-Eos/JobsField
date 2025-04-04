@@ -1,0 +1,136 @@
+:root{
+   --Drk-Red: #6B0000;
+   --Drk-Blu: #1D1F21;
+   --Drk-Gry: #F8F8F8;
+
+   --Drk-Text: #060D15;
+   --White: #FFF;
+
+   --Abt-clr: #350000;
+
+   --Poppins: "Poppins", sans-serif;
+   --Inria-Serif: "Inria Serif", serif;
+}
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   color: var(--Drk-Text);
+   font-family: var(--Poppins);
+   
+}
+.main-job-page{
+   max-width: 1440px;
+   margin: 0 auto;
+   padding: 5rem 3rem;
+}
+
+.job-name{
+   font-size: 2.3rem;
+   font-family: var(--Inria-Serif);
+   font-weight: 700;
+   font-style: italic;
+   line-height: 30px;
+   margin-bottom: 10px;
+}
+.job-creator{
+   font-size: 14px;
+   font-family: var(--Inria-Serif);
+   font-style: italic;
+   font-weight: 700;
+}
+.red-text{
+   color: var(--Drk-Red);
+   font-family: var(--Inria-Serif);
+   font-weight: 900;
+   margin-left: 10px;
+}
+.job-role-container{
+   margin-top: 1.5rem;
+   margin-left: 15px;
+}
+.jb-rl{
+   color: var(--Drk-Red);
+   font-weight: 700;
+   font-size: 17px;
+   font-family: var(--Inria-Serif);
+   margin: 1rem 0;
+}
+.jb-rl-text{
+   font-size: 14px;
+   max-width: 1000px;
+   line-height: 25px;
+   text-align: justify;
+   margin-bottom: 4rem;
+}
+
+.instruct-box{
+   margin: 5rem 0 3rem 15px;
+   background-color: var(--Drk-Blu);
+   padding: 3rem 4rem;
+   border-radius: 10px;
+}
+.inst-b-title{
+   margin-top: 2rem;
+   font-size: 23px;
+   font-family: var(--Inria-Serif);
+   font-weight: 700;
+   margin-bottom: 1rem;
+   color: var(--Drk-Gry);
+}
+.sect{
+   color: var(--Drk-Text);
+   margin-bottom: 2rem;
+   margin-top: 2rem;
+   font-size: 23px;
+   font-family: var(--Inria-Serif);
+   font-weight: 700;
+}
+.inst-b-text{
+   margin-top: 2rem;
+   font-size: 14px;
+   line-height: 29px;
+   color: var(--Drk-Gry);
+   margin-bottom: 2rem;
+   text-align: justify;
+}
+.does-box{
+   margin: 5rem 0 3rem 15px;
+}
+.does-text{
+   font-size: 14px;
+   margin-top: 1rem;
+   margin-left: 16px;
+}
+@media screen and (max-width: 640px) {
+   .main-job-page{
+      padding: 4rem 1.5rem;
+   }
+   .instruct-box{
+      margin: 5rem 0 3rem 15px;
+      background-color: var(--Drk-Blu);
+      padding: 1.5rem 2rem;
+      border-radius: 10px;
+   }
+   .inst-b-title, .sect{
+      font-size: 20px;
+   }
+   
+   .does-box, .instruct-box, .job-role-container{
+      margin-left: 0px !important;
+   }
+   .does-text, .inst-b-text{
+      text-align: justify;
+   }
+}
+@media screen and (max-width: 440px) {
+   .inst-b-text{
+      margin-top: 2rem;
+      text-align: justify;
+   }
+   .does-text{
+      font-size: 13px;
+      margin-left: 0px;
+   }
+}

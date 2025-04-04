@@ -1,0 +1,320 @@
+:root{
+   --Drk-Red: #6B0000;
+   --Drk-Blu: #1D1F21;
+   --Drk-Gry: #F8F8F8;
+
+   --Drk-Text: #060D15;
+   --White: #FFF;
+
+   --Abt-clr: #350000;
+
+   --Poppins: "Poppins", sans-serif;
+   --Inria-Serif: "Inria Serif", serif;
+}
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   color: var(--Drk-Text);
+   font-family: var(--Poppins);
+}
+
+body {
+    -webkit-text-size-adjust: 100%;
+}
+
+
+.home_page_content{
+   max-width: 1440px;
+   margin: 0 auto;
+
+   padding: 3rem 2rem;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.home_intro-title_holder{
+   max-width: 48rem;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding-top: 3rem;
+}
+#intro-title-first{
+   font-family: var(--Inria-Serif);
+   font-size: 2rem;
+   font-weight: 600;
+   max-width: 30rem;
+   text-align: center;
+   letter-spacing: .5px; 
+   line-height: 34px;
+}
+.red-derk{
+   font-family: var(--Inria-Serif);
+   color: var(--Drk-Red);
+}
+#intro-text-sec{
+/*    max-width: 48rem; */
+   margin-top: 2rem;
+   text-align: center;
+   font-size: 14px;
+   line-height: 24px; 
+}
+@media screen and (min-width: 768px) {
+   #intro-text-sec {
+      font-size: 14px; /* Keep the font size the same on larger screens */
+   }
+}
+
+.animation-Up{
+   opacity: 0;
+   transform: translateY(2rem);
+   animation: showUp 700ms linear forwards;
+}
+@keyframes showUp {
+   35%{
+      opacity: 0;
+   }to{
+      opacity: 1;
+      transform: translateY(0rem);
+   }
+}
+.line{
+   width: 93%;
+   height: 1px;
+   background-color: #1D1F21;
+   opacity: .2;
+   margin: 4rem 0 5rem 0;
+}
+.home_introduction{
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.home_introduction:after { /* Can be remove ✔*/
+   content: "";
+   display: table;
+   clear: both;
+ }
+.introduction-text-container, .object-text-container{
+   max-width: 1200px;
+   display: flex;
+   justify-content: space-between;
+
+   /* background-color: rgba(255, 0, 0, 0.205); */
+}
+.intro-text-col, .obj-text-col{
+  float: left;
+  width: 45%;
+  padding: 10px;
+}
+#intro-title-sec{
+   font-family: var(--Inria-Serif);
+   font-style: italic;
+   font-size: 1.6rem;
+   font-weight: 500;
+   margin-bottom: 1.3rem;
+}
+.intro-text-sec{
+   text-align: justify;
+   font-size: 14px;
+   line-height: 22px;
+}
+.top-marg{
+   margin-top: 3.1rem;
+}
+#props_img{
+   margin-top: 9rem;
+   width: 100%;
+   border-radius: 6px;
+}
+
+#object-title{
+   margin-top: 9rem;
+   font-size: 2rem; 
+   font-family: var(--Inria-Serif);
+   font-style: italic;
+   font-weight: 500;
+   margin-bottom: 1.5rem;
+}
+.object-text{
+   font-size: 14px;
+   margin-bottom: 1.3rem;
+   text-align: justify;
+}
+.animationn-showLeft{
+   opacity: 0;
+   transform: translateX(2rem);
+   animation: showRight 800ms linear forwards;
+   animation-timeline: view(60% -50%);
+}
+@keyframes showRight {
+   35%{
+      opacity: 0;
+   }to{
+      opacity: 1;
+      transform: translateX(0rem);
+   }
+}
+
+.about-this-project{
+   max-width: 1440px;
+   margin: 0 auto;
+   margin-top: 3rem !important;
+   background: linear-gradient(
+      0deg,
+      var(--Abt-clr),
+      var(--Drk-Red)
+   );
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center; 
+   transition: 400ms;
+   padding: 4rem 8rem;
+}
+.abt-title-holder{
+   width: fit-content;
+   align-self: self-start;
+   margin: 3rem 0 1.5rem 0;
+}
+.about-title{
+   font-size: 2rem;
+   font-family: var(--Inria-Serif);
+   color: var(--Drk-Gry);
+   font-style: italic;
+}
+.about-title-shadow{
+   font-size: 2.4rem;
+   font-family: var(--Inria-Serif);
+   color: var(--Drk-Gry);
+   font-style: italic;
+   transform: rotate(180deg) scaleX(-1);
+   opacity: .4;
+}
+.about-texts{
+   font-size: 14px;
+   color: var(--Drk-Gry);
+   line-height: 30px;
+   max-width: 1000px;
+   font-weight: 300;
+   letter-spacing: .1px;
+   margin: 0 0 3rem 0;
+   text-align: justify;
+}
+
+
+.goTo-job{
+   max-width: 1440px;
+   padding: 10px 0;
+   margin: 15px auto;
+   background-color: var(--Abt-clr);
+   text-align: center;
+   color: var(--Drk-Gry);
+   font-family: var(--Inria-Serif);
+   border-top: 1px solid var(--Abt-clr);
+   border-bottom: 1px solid var(--Abt-clr);
+   font-size: 1.2rem;
+   cursor: pointer;
+   transition: 200ms;
+}
+.goTo-job:hover{
+   color: var(--Abt-clr);
+   font-weight: 600;
+   background-color: var(--White);
+   border-top: 1px solid var(--Abt-clr);
+   border-bottom: 1px solid var(--Abt-clr);
+}
+
+@media screen and (max-width: 760px) {
+   .introduction-text-container{
+      max-width: 600px; 
+      display: flex;
+      justify-content: space-between;
+    
+   /*  background-color: rgba(255, 0, 0, 0.205); */
+   }
+   .about-this-project{
+      padding: 2rem 4rem;
+   }
+}
+@media screen and (max-width: 665px) {
+   #intro-text-sec{
+      text-align: justify;
+   }
+
+   .top-marg{
+      margin-top: 2.1rem;
+   }
+   #props_img{
+      margin-top: 6rem;
+   }
+   .object-text-container, .introduction-text-container{
+      flex-direction: column;
+   }
+   .obj-text-col, .intro-text-col{
+      width: 100%;
+   }
+   .obj-marg-top{
+      margin-top: 2.6rem;
+   }
+   #object-title{
+      margin-top: 2rem;
+   }
+}
+
+@media screen and (max-width: 465px) {
+   .home_page_content{
+      padding: 2.3rem 1.2rem;
+   }
+   .line{
+      margin: 3.3rem 0 3.6rem 0;
+      width: 100%; 
+   }
+   #intro-title-first{
+      letter-spacing: .3px;
+      max-width: 22rem;
+      font-weight: 800;
+      line-height: 27px;
+      font-size: 1.45rem;
+      text-align: left;
+      align-self: self-start;
+   }
+   #object-title, .intro-title-sec{ 
+      font-size: 1.6rem;
+   }
+   #intro-text-sec, .intro-text-sec, .object-text{
+      font-size: 13px;
+   }
+
+   .about-this-project{
+      margin-top: 2.4rem !important;
+      padding: 1.6rem 1.4rem;
+   }
+   .abt-title-holder{
+      width: fit-content;
+      align-self: self-start;
+      margin: 3rem 0 1.5rem 0;
+   }
+   .about-title{
+      font-size: 1.7rem;
+   }
+   .about-title-shadow{
+      font-size: 2rem;
+   }
+   .about-texts{
+      font-size: 13px;
+      line-height: 25px;
+      margin: 0 0 2.3rem 0;
+   }
+   .goTo-job{
+      padding: 10px 0;
+      margin: 11px auto;
+      font-size: 1rem;
+   }
+}

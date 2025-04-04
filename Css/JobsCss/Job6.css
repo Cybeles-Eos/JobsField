@@ -1,0 +1,115 @@
+:root{
+   --Drk-Red: #6B0000;
+   --Drk-Blu: #1D1F21;
+   --Drk-Gry: #F8F8F8;
+
+   --Drk-Text: #060D15;
+   --White: #FFF;
+
+   --Abt-clr: #350000;
+
+   --Poppins: "Poppins", sans-serif;
+   --Inria-Serif: "Inria Serif", serif;
+}
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   color: var(--Drk-Text);
+   font-family: var(--Poppins);
+   
+}
+.main-job-page{
+   max-width: 1440px;
+   margin: 0 auto;
+   padding: 5rem 3rem;
+}
+
+.job-name{
+   font-size: 2.3rem;
+   font-family: var(--Inria-Serif);
+   font-weight: 700;
+   font-style: italic;
+   line-height: 30px;
+   margin-bottom: 10px;
+}
+.job-creator{
+   font-size: 14px;
+   font-family: var(--Inria-Serif);
+   font-style: italic;
+   font-weight: 700;
+}
+.red-text{
+   color: var(--Drk-Red);
+   font-family: var(--Inria-Serif);
+   font-weight: 900;
+   margin-left: 10px;
+}
+.job-role-container{
+   margin-top: 1.5rem;
+   margin-left: 15px;
+}
+.jb-rl{
+   color: var(--Drk-Red);
+   font-weight: 700;
+   font-size: 17px;
+   font-family: var(--Inria-Serif);
+   margin: 1rem 0;
+}
+.jb-rl-text{
+   font-size: 14px;
+   max-width: 1000px;
+   line-height: 25px;
+   text-align: justify;
+   margin-bottom: 4rem;
+}
+
+.grid-step-box{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 3rem;
+}
+.step-job-holder{
+   margin-top: 2rem;
+}
+.step-name{
+   font-size: 20px;
+   font-weight: 700;
+   font-family: var(--Inria-Serif);
+   margin-bottom: 1rem;
+}
+.step-text{
+   font-size: 14px;
+   line-height: 24px;
+   text-align: justify;
+   max-width: 1000px;
+}
+.note-text{
+   font-size: 14px;
+   text-align: justify;
+   max-width: 800px;
+ 
+   color: var(--Abt-clr);
+   margin-top: 5rem !important;
+}
+
+@media screen and (max-width: 860px) {
+   .grid-step-box{
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+   }
+}
+@media screen and (max-width: 640px) {
+   .grid-step-box{
+      grid-template-columns: 1fr;
+      gap: 1.6rem;
+   }
+   .main-job-page{
+      padding: 4rem 1.5rem;
+   }
+   .job-role-container{
+      margin-left: 0px !important;
+   }
+
+}

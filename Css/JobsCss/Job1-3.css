@@ -1,0 +1,206 @@
+:root{
+   --Drk-Red: #6B0000;
+   --Drk-Blu: #1D1F21;
+   --Drk-Gry: #F8F8F8;
+
+   --Drk-Text: #060D15;
+   --White: #FFF;
+
+   --Abt-clr: #350000;
+
+   --Poppins: "Poppins", sans-serif;
+   --Inria-Serif: "Inria Serif", serif;
+}
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   color: var(--Drk-Text);
+   font-family: var(--Poppins);
+}
+
+.main-job-page{
+   max-width: 1440px;
+   margin: 0 auto;
+
+   padding: 5rem 3rem;
+}
+.job-header{
+   margin-bottom: 2rem;
+}
+.job-name{
+   font-size: 2.3rem;
+   font-family: var(--Inria-Serif);
+   font-weight: 700;
+   font-style: italic;
+}
+.job-creator{
+   font-size: 14px;
+   font-family: var(--Inria-Serif);
+   font-style: italic;
+   font-weight: 700;
+}
+.red-text{
+   color: var(--Drk-Red);
+   font-family: var(--Inria-Serif);
+   font-weight: 900;
+   margin-left: 10px;
+}
+
+.job-skills-role-holder{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   gap: 4rem; 
+}
+
+.job-skill{
+   width: 45%;
+   float: left;
+}
+.skill-text{
+   font-family: var(--Inria-Serif);
+   font-weight: 700;
+   font-size: 1.3rem;
+   margin-bottom: 1rem;
+}
+.skill-list{
+   display: flex;
+   flex-direction: column;
+   align-items: self-start;
+   margin-left: 1.6rem;
+}
+.skill{
+   list-style: outside !important;
+   margin-bottom: 5px;
+   font-size:10px;
+}
+.skill-req-text{
+   font-size: 13px;
+}
+
+.job-role{
+   width: 50%;
+}
+.job-role-title{
+   color: var(--Drk-Red);
+   font-size: 1.2rem;
+   font-family: var(--Inria-Serif);
+   margin-bottom: 1rem;
+   font-weight: 700;
+}
+.job-role-text{
+   font-size: 13px;
+   text-align: justify;
+   max-width: 400px;
+}
+
+
+
+.job-boxsOfInformation{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 2rem;
+
+   max-width: 1400px;
+   margin: 0 auto;
+   margin-top: 6rem !important;
+}
+.jobField3-col{
+   grid-template-columns: 1fr 1fr;
+}
+.job-box{
+   padding: 2rem 1.6rem;
+   background-color: var(--Drk-Blu);
+   border-radius: 6px;
+}
+.job-box-header{
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.job-box-title{
+   font-family: var(--Inria-Serif);
+   font-size: 1.7rem;
+   font-style: italic;
+   color: var(--Drk-Gry);
+   margin-bottom: 1.2rem;
+}
+.job-box-icon{
+   width: 1.9rem;
+   align-self: self-start;
+   margin-left: 2rem;
+}
+.job-box-text{
+   font-size: 14px;
+   color: var(--Drk-Gry);
+   font-weight: 300;
+   line-height: 24px;
+   text-align: justify;
+}
+
+.invert-title-job{
+   color: var(--Drk-Blu);
+   font-weight: 800;
+}
+.invert-text-job{
+   color: var(--Drk-Blu);
+   font-weight: 400;
+}
+.invert-box-job{
+   border: 1px solid var(--Drk-Blu);
+   background-color: transparent;
+}
+@media screen and (max-width: 930px) {
+   .job-boxsOfInformation{
+      grid-template-columns: 1fr 1fr;
+
+   }
+}
+@media screen and (max-width: 750px) {
+   .main-job-page{   
+      padding: 4rem 2rem;
+   }
+   .job-skill{
+      width: 100%;
+      float: left;
+   }
+   .job-skills-role-holder{
+      flex-direction: column;
+   }
+   .job-role{
+      width: 100%;
+   }
+   .job-role-text{
+      font-size: 13px;
+      text-align: justify;
+      max-width: 800px;
+   }
+   .job-boxsOfInformation{
+      grid-template-columns: 1fr;
+   }
+}
+@media screen and (max-width: 450px) {
+   .main-job-page{
+   
+      padding: 4rem 1.5rem;
+   }
+   .job-name{
+      font-size: 1.6rem;
+   }
+   .skill-list{
+      margin-left: .7rem;
+   }
+
+   .job-box-title{
+      font-size: 1.5rem;
+   }
+   .job-box-icon{
+      width: 1.7rem;
+   }
+   .job-box-text{
+      font-size: 13px;
+   }
+}

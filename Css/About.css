@@ -1,0 +1,96 @@
+:root{
+   --Drk-Red: #6B0000;
+   --Drk-Blu: #1D1F21;
+   --Drk-Gry: #F8F8F8;
+
+   --Drk-Text: #060D15;
+   --White: #FFF;
+
+   --Abt-clr: #350000;
+
+   --Poppins: "Poppins", sans-serif;
+   --Inria-Serif: "Inria Serif", serif;
+}
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   color: var(--Drk-Text);
+   font-family: var(--Poppins);
+}
+
+.main_about-page{
+   height: 100vh;
+   margin-bottom: 4rem;
+}
+.about-this-project{
+   max-width: 1440px;
+   margin: 0 auto;
+   margin-top: 3rem !important;
+   background-color: transparent;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center; 
+   transition: 400ms;
+   padding: 4rem 8rem;
+}
+.abt-title-holder{
+   width: fit-content;
+   align-self: self-start;
+   margin: 3rem 0 1.5rem 0;
+}
+.about-title{
+   font-size: 2rem;
+   font-family: var(--Inria-Serif);
+   color: var(--Abt-clr);
+   font-style: italic;
+}
+.about-title-shadow{
+   font-size: 2.4rem;
+   font-family: var(--Inria-Serif);
+   color: var(--Abt-clr);
+   font-style: italic;
+   transform: rotate(180deg) scaleX(-1);
+   opacity: .4;
+}
+.about-texts{
+   font-size: 14px;
+   color: var(--Abt-clr);
+   line-height: 30px;
+   max-width: 1000px;
+   font-weight: 400;
+   letter-spacing: .1px;
+   margin: 0 0 3rem 0;
+   text-align: justify;
+}
+
+
+@media screen and (max-width: 760px) {
+   .about-this-project{
+      padding: 2rem 4rem;
+   }
+}
+@media screen and (max-width: 465px) {
+   .about-this-project{
+      margin-top: 2.4rem !important;
+      padding: 1.6rem 1.4rem;
+   }
+   .abt-title-holder{
+      width: fit-content;
+      align-self: self-start;
+      margin: 3rem 0 1.5rem 0;
+   }
+   .about-title{
+      font-size: 1.7rem;
+   }
+   .about-title-shadow{
+      font-size: 2rem;
+   }
+   .about-texts{
+      font-size: 13px;
+      line-height: 25px;
+      margin: 0 0 2.3rem 0;
+   }
+}

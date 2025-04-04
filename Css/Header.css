@@ -1,0 +1,128 @@
+:root{
+   --Drk-Red: #6B0000;
+   --Drk-Blu: #1D1F21;
+   --Drk-Gry: #F8F8F8;
+
+   --Drk-Text: #060D15;
+   --White: #FFF;
+
+   --Abt-clr: #350000;
+
+   --Poppins: "Poppins", sans-serif;
+   --Inria-Serif: "Inria Serif", serif;
+}
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   color: var(--Drk-Text);
+   font-family: var(--Poppins);
+}
+
+nav{
+   width: 100%;
+   margin: 0 auto;
+   height: 2.7rem;
+   background-color: var(--Drk-Red);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-inline: 1rem;
+   position: relative;
+   z-index: 3;
+}
+
+#logo{
+   color: var(--White);
+   font-family: var(--Inria-Serif);
+   font-weight: 700;
+   font-size: 1.2rem;
+   z-index: 3;
+}
+.nav-ul{
+   display: flex;
+   width: 430px;
+   justify-content: space-around;
+
+}
+.nav-li{
+   list-style: none;
+}
+.nav-a{
+   color: var(--White) !important;
+   font-size: 13px;
+   text-decoration: none;
+   letter-spacing: .4px;
+   font-weight: 300;
+   user-select: none;
+   position: relative;
+   z-index: 3;
+}
+.menu-btn{
+   display: none;
+   /* display: flex; */
+   user-select: none;
+   cursor: pointer;
+   width: 1.9rem;
+   aspect-ratio: 1;
+   border: none;
+   background-color: transparent;
+   padding: 6px 3px;
+   overflow: hidden;
+   flex-direction: column;
+   justify-content: space-between;
+   z-index: 3;
+}
+.mb_line-1{ 
+   width: 1.4rem;
+   height: 2px;
+   transition: 200ms;
+   background-color: var(--White);
+ 
+}
+.mb_line-2{
+   width: 1.4rem;
+   height: 2px;
+   transition: 200ms;
+   background-color: var(--White);
+}
+.mb_line-3{
+   width: 1.4rem;
+   height: 2px;
+   transition: 200ms;
+   background-color: var(--White);
+   
+}
+.rotate_bot{
+   rotate: 45deg;
+   transform: translateY(6.7px) translateX(5px);
+}
+.slide_left{
+   transform: translateX(-2rem);
+}
+.rotate_top{
+   rotate: -45deg;
+   transform: translateY(-7px) translateX(5px);
+}
+@media screen and (max-width: 610px) {
+   .menu-btn{
+      display: flex;
+   }
+   .nav-ul{
+      width: 100%;
+      position: absolute;
+      top: -14rem;
+      left: 0;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+      padding: 1.5rem 0;
+      background-color: var(--Drk-Red);
+      z-index: -1;    
+      transition: 300ms;
+   }
+   .show_nav{
+      top: 2.6rem;
+   }
+}

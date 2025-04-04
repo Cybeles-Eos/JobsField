@@ -1,0 +1,121 @@
+:root{
+   --Drk-Red: #6B0000;
+   --Drk-Blu: #1D1F21;
+   --Drk-Gry: #F8F8F8;
+
+   --Drk-Text: #060D15;
+   --White: #FFF;
+
+   --Abt-clr: #350000;
+
+   --Poppins: "Poppins", sans-serif;
+   --Inria-Serif: "Inria Serif", serif;
+}
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   color: var(--Drk-Text);
+   font-family: var(--Poppins);
+   
+}
+.main-job-page{
+   max-width: 1440px;
+   margin: 0 auto;
+   padding: 5rem 3rem;
+}
+
+.job-name{
+   font-size: 2.3rem;
+   font-family: var(--Inria-Serif);
+   font-weight: 700;
+   font-style: italic;
+   line-height: 30px;
+   margin-bottom: 10px;
+}
+.job-creator{
+   font-size: 14px;
+   font-family: var(--Inria-Serif);
+   font-style: italic;
+   font-weight: 700;
+}
+.red-text{
+   color: var(--Drk-Red);
+   font-family: var(--Inria-Serif);
+   font-weight: 900;
+   margin-left: 10px;
+}
+
+.skill-req-title{
+   font-size: 1.5rem;
+   font-family: var(--Inria-Serif);
+   font-weight: 700;
+   font-style: italic;
+
+   margin: 3.7rem 0 2rem 0;
+}
+
+.skil-req-text-box{
+   margin-top: 1.5rem;
+   margin-left: 15px;
+}
+.skill-req-box-title{
+   font-size: 14px;
+   font-weight: 600;
+}
+.skill-req-box-text{
+   margin-top: 4px;
+   font-size: 14px;
+   line-height: 25px;
+   max-width: 1000px;
+}
+.salry-texts{
+   margin-left: 15px;
+   margin-top: 1rem;
+   font-size: 14px;
+   max-width: 1000px;
+}
+.salary-holder-prc{
+   margin-left: 15px;
+   margin-top: 2rem;
+}
+.salary-in-school{
+   font-size: 20px;
+   color: var(--Drk-Red);
+   font-style: italic;
+   font-family: var(--Inria-Serif);
+   font-weight: 700;
+}
+.salary-school-text, .additional-text{
+   font-size: 14px;
+   line-height: 24px;
+   margin-top: .5rem;
+   max-width: 900px;
+}
+.additional-title{
+   font-size: 20px;
+   font-style: italic;
+   font-family: var(--Inria-Serif);
+   font-weight: 700;
+   margin-top: 3rem;
+   margin-bottom: 1rem;
+}
+.additional-text{
+   margin-left: 15px;
+   margin-bottom: 1rem;
+}
+@media screen and (max-width: 640px) {
+   .main-job-page{
+      padding: 4rem 1.5rem;
+   }
+   .additional-text, .salary-holder-prc, 
+   .salry-texts,.skil-req-text-box{
+      margin-left: 0px !important;
+   }
+
+   .additional-text, .skill-req-box-text,
+   .salary-school-text, .additional-text{
+      text-align: justify;
+   }
+}
